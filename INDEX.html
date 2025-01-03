@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda dengan Navigasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            flex-shrink: 0;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        header .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav {
+            display: flex;
+        }
+        header nav a {
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        header nav a:hover {
+            background-color: #575757;
+        }
+        #content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="buku.png" alt="Logo">
+            <span>Eperpustakaan</span>
+        </div>
+        <nav>
+            <a href="home.html" target="content-frame">Home</a>
+            <a href="transaksiperpus.html" target="content-frame">Peminjaman</a>
+            <a href="profilperpus.html" target="content-frame">Profile</a>
+            <a href="perpustakaan_login.html">Login</a>
+        </nav>
+    </header>
+    <div id="content">
+        <iframe name="content-frame" src="tampilanberanda.html"></iframe>
+    </div>
+</body>
+</html>

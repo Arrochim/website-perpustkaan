@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container {
+        max-width: 960px;
+            height: 100px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .Library {
+            text-align: center;
+        }
+
+        .Library h1 {
+            color: #333;
+        }
+
+        .Library p {
+            color: #666;
+        }
+
+        .wrapper {
+            margin-left: 200px;
+            margin-top: 10%;
+            width: 400px;
+            background: #333;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(20px);
+            color: #fff;
+            box-shadow: 0 0 10px  rgba(255, 255, 255, .2);
+            border-radius: 15px;
+            padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+footer{
+            background-color: #333;
+            color: #f5f5f5;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="Library">
+            <h1>From  Transaksi Peminjaman  Buku</h1>
+            <p>Pinjam buku favorit Anda  dan isi Formuli dibawah ini.</p>
+         </div>
+    <div class="wrapper"> 
+        <h1>Formulir Peminjaman</h1> 
+    <form id="transactionForm">
+        <label for="name">Nama</label><br>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama"><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Masukkan email"><br><br>
+        <label for="Tanggal Peminjaman">Tanggal Peminjaman</label><br>
+        <input type="date" id="Tanggal Peminjaman" name="Tanggal Peminjaman" placeholder="Masukkan Tanggal"><br><br>
+        <label for="Tanggal Pengembalian">Tanggal Pengembalian</label><br>
+        <input type="date" id="Tanggal Pengembalian" name="Tanggal Pengembalian" placeholder="Masukkan Tanggal"><br><br>
+        <label for="transaction">Transaksi</label><br>
+        <input type="text" id="transaction" name="transaction" placeholder="Jenis transaksi"><br><br>
+        <button type="submit">Simpan</button>
+    </form>
+    <p id="errorMessage" style="color: red;"></p>
+    
+    <script>
+        document.getElementById('transactionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman formulir secara default
+    
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const transaction = document.getElementById('transaction').value.trim();
+            const errorMessage = document.getElementById('errorMessage');
+    
+            // Validasi jika ada input yang kosong
+            if (!name || !email || !transaction) {
+                errorMessage.textContent = 'Semua input wajib diisi!';
+            } else {
+                errorMessage.textContent = '';
+                alert('Formulir berhasil dikirim!');
+                // Lanjutkan pengiriman formulir
+                // this.submit();
+            }
+        });
+    </script>
+   
+    </div>   
+   
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <footer>
+        &copy; Syifa Urrochim|241011700141|Mahasiswa UNPAM
+    </footer>
+</body>
+</html>
+
+
